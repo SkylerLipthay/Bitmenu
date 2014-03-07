@@ -39,7 +39,8 @@
   [self updateShouldLaunchOnStartupMenuItem:[self.class shouldLaunchOnStartup]];
   [self updateCurrencyCodeMenuItem:[self.class currencyCode]];
   [self updateSourceMenuItem:[self.class sourceName]];
-  
+
+  [self setStatusLoading];
   [self refreshStatus];
   
   [_refreshTimer invalidate];
@@ -124,15 +125,18 @@
 }
 
 - (void)refreshStatus {
-  [self setStatusLoading];
-
   id<Source> source = [self.class source];
   if (source == nil) {
     return;
   }
 
   dispatch_async(dispatch_get_main_queue(), ^{
-    [self setStatusWithValue:[source buyPriceWithCurrencyCode:[self.class currencyCode]]];
+    NSDecimalNumber *value = [source buyPriceWithCurrencyCode:[self.class currencyCode]];
+    if (value == nil) {
+      [self setStatusLoading];
+    } else {
+      [self setStatusWithValue:value];
+    }
   });
 }
 
