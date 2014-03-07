@@ -6,10 +6,19 @@
 //  Copyright (c) 2014 Skyler Lipthay. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
+@interface AppDelegate : NSObject <NSApplicationDelegate> {
+ @private
+  NSStatusItem *_statusItem;
+}
 
-@interface AppDelegate : NSObject <NSApplicationDelegate>
+@property (assign) IBOutlet NSMenu *statusMenu;
+@property (assign) IBOutlet NSMenuItem *launchOnStartupItem;
+@property (assign) IBOutlet NSMenuItem *currencyItem;
+@property (assign) IBOutlet NSMenuItem *sourceItem;
 
-@property (assign) IBOutlet NSWindow *window;
+- (IBAction)handleCurrency:(id)sender;
+- (IBAction)handleSource:(id)sender;
+- (IBAction)handleQuit:(id)sender;
+- (IBAction)handleShouldLaunchOnStartup:(id)sender;
 
 @end

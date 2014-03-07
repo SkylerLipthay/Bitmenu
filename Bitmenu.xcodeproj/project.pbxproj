@@ -7,17 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		243C83F7DC8D4BB1AE41D629 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E7528664C2BD42718D8A0893 /* libPods.a */; };
+		D42D5E1D18C9D3D0008B98FA /* Coinbase.m in Sources */ = {isa = PBXBuildFile; fileRef = D42D5E1C18C9D3D0008B98FA /* Coinbase.m */; };
 		D4632DEB18C9B4DB00646341 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4632DEA18C9B4DB00646341 /* Cocoa.framework */; };
 		D4632DF518C9B4DB00646341 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D4632DF318C9B4DB00646341 /* InfoPlist.strings */; };
 		D4632DF718C9B4DB00646341 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D4632DF618C9B4DB00646341 /* main.m */; };
-		D4632DFB18C9B4DB00646341 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = D4632DF918C9B4DB00646341 /* Credits.rtf */; };
 		D4632DFE18C9B4DB00646341 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D4632DFD18C9B4DB00646341 /* AppDelegate.m */; };
 		D4632E0118C9B4DB00646341 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4632DFF18C9B4DB00646341 /* MainMenu.xib */; };
-		D4632E0318C9B4DB00646341 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4632E0218C9B4DB00646341 /* Images.xcassets */; };
 		D4632E0A18C9B4DB00646341 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4632E0918C9B4DB00646341 /* XCTest.framework */; };
 		D4632E0B18C9B4DB00646341 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4632DEA18C9B4DB00646341 /* Cocoa.framework */; };
-		D4632E1318C9B4DB00646341 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D4632E1118C9B4DB00646341 /* InfoPlist.strings */; };
-		D4632E1518C9B4DB00646341 /* BitmenuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D4632E1418C9B4DB00646341 /* BitmenuTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +29,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D42D5E1818C9D39A008B98FA /* Source.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Source.h; sourceTree = "<group>"; };
+		D42D5E1B18C9D3D0008B98FA /* Coinbase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Coinbase.h; sourceTree = "<group>"; };
+		D42D5E1C18C9D3D0008B98FA /* Coinbase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Coinbase.m; sourceTree = "<group>"; };
 		D4632DE718C9B4DB00646341 /* Bitmenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bitmenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4632DEA18C9B4DB00646341 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		D4632DED18C9B4DB00646341 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -40,16 +41,13 @@
 		D4632DF418C9B4DB00646341 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D4632DF618C9B4DB00646341 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D4632DF818C9B4DB00646341 /* Bitmenu-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bitmenu-Prefix.pch"; sourceTree = "<group>"; };
-		D4632DFA18C9B4DB00646341 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		D4632DFC18C9B4DB00646341 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D4632DFD18C9B4DB00646341 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D4632E0018C9B4DB00646341 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		D4632E0218C9B4DB00646341 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D4632E0818C9B4DB00646341 /* BitmenuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BitmenuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4632E0918C9B4DB00646341 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		D4632E1018C9B4DB00646341 /* BitmenuTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BitmenuTests-Info.plist"; sourceTree = "<group>"; };
-		D4632E1218C9B4DB00646341 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		D4632E1418C9B4DB00646341 /* BitmenuTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BitmenuTests.m; sourceTree = "<group>"; };
+		DB02AF88E5194DEE89575865 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		E7528664C2BD42718D8A0893 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +56,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D4632DEB18C9B4DB00646341 /* Cocoa.framework in Frameworks */,
+				243C83F7DC8D4BB1AE41D629 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,9 +76,9 @@
 			isa = PBXGroup;
 			children = (
 				D4632DF018C9B4DB00646341 /* Bitmenu */,
-				D4632E0E18C9B4DB00646341 /* BitmenuTests */,
 				D4632DE918C9B4DB00646341 /* Frameworks */,
 				D4632DE818C9B4DB00646341 /* Products */,
+				DB02AF88E5194DEE89575865 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,6 +97,7 @@
 				D4632DEA18C9B4DB00646341 /* Cocoa.framework */,
 				D4632E0918C9B4DB00646341 /* XCTest.framework */,
 				D4632DEC18C9B4DB00646341 /* Other Frameworks */,
+				E7528664C2BD42718D8A0893 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -117,8 +117,10 @@
 			children = (
 				D4632DFC18C9B4DB00646341 /* AppDelegate.h */,
 				D4632DFD18C9B4DB00646341 /* AppDelegate.m */,
+				D42D5E1B18C9D3D0008B98FA /* Coinbase.h */,
+				D42D5E1C18C9D3D0008B98FA /* Coinbase.m */,
+				D42D5E1818C9D39A008B98FA /* Source.h */,
 				D4632DFF18C9B4DB00646341 /* MainMenu.xib */,
-				D4632E0218C9B4DB00646341 /* Images.xcassets */,
 				D4632DF118C9B4DB00646341 /* Supporting Files */,
 			);
 			path = Bitmenu;
@@ -131,25 +133,6 @@
 				D4632DF318C9B4DB00646341 /* InfoPlist.strings */,
 				D4632DF618C9B4DB00646341 /* main.m */,
 				D4632DF818C9B4DB00646341 /* Bitmenu-Prefix.pch */,
-				D4632DF918C9B4DB00646341 /* Credits.rtf */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		D4632E0E18C9B4DB00646341 /* BitmenuTests */ = {
-			isa = PBXGroup;
-			children = (
-				D4632E1418C9B4DB00646341 /* BitmenuTests.m */,
-				D4632E0F18C9B4DB00646341 /* Supporting Files */,
-			);
-			path = BitmenuTests;
-			sourceTree = "<group>";
-		};
-		D4632E0F18C9B4DB00646341 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				D4632E1018C9B4DB00646341 /* BitmenuTests-Info.plist */,
-				D4632E1118C9B4DB00646341 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -161,9 +144,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D4632E1818C9B4DB00646341 /* Build configuration list for PBXNativeTarget "Bitmenu" */;
 			buildPhases = (
+				FD2F6194891B4491835C6611 /* Check Pods Manifest.lock */,
 				D4632DE318C9B4DB00646341 /* Sources */,
 				D4632DE418C9B4DB00646341 /* Frameworks */,
 				D4632DE518C9B4DB00646341 /* Resources */,
+				D19C1D2422DA4CB493AE8449 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -231,8 +216,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D4632DF518C9B4DB00646341 /* InfoPlist.strings in Resources */,
-				D4632E0318C9B4DB00646341 /* Images.xcassets in Resources */,
-				D4632DFB18C9B4DB00646341 /* Credits.rtf in Resources */,
 				D4632E0118C9B4DB00646341 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -241,17 +224,50 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4632E1318C9B4DB00646341 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D19C1D2422DA4CB493AE8449 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD2F6194891B4491835C6611 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D4632DE318C9B4DB00646341 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D42D5E1D18C9D3D0008B98FA /* Coinbase.m in Sources */,
 				D4632DFE18C9B4DB00646341 /* AppDelegate.m in Sources */,
 				D4632DF718C9B4DB00646341 /* main.m in Sources */,
 			);
@@ -261,7 +277,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4632E1518C9B4DB00646341 /* BitmenuTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,28 +299,12 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		D4632DF918C9B4DB00646341 /* Credits.rtf */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D4632DFA18C9B4DB00646341 /* en */,
-			);
-			name = Credits.rtf;
-			sourceTree = "<group>";
-		};
 		D4632DFF18C9B4DB00646341 /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				D4632E0018C9B4DB00646341 /* Base */,
 			);
 			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
-		D4632E1118C9B4DB00646341 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D4632E1218C9B4DB00646341 /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -381,8 +380,8 @@
 		};
 		D4632E1918C9B4DB00646341 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB02AF88E5194DEE89575865 /* Pods.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Bitmenu/Bitmenu-Prefix.pch";
@@ -394,8 +393,8 @@
 		};
 		D4632E1A18C9B4DB00646341 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB02AF88E5194DEE89575865 /* Pods.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Bitmenu/Bitmenu-Prefix.pch";
@@ -464,6 +463,7 @@
 				D4632E1A18C9B4DB00646341 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D4632E1B18C9B4DB00646341 /* Build configuration list for PBXNativeTarget "BitmenuTests" */ = {
 			isa = XCConfigurationList;
@@ -472,6 +472,7 @@
 				D4632E1D18C9B4DB00646341 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
