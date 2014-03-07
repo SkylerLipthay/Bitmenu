@@ -40,6 +40,8 @@
   [self updateCurrencyCodeMenuItem:[self.class currencyCode]];
   [self updateSourceMenuItem:[self.class sourceName]];
   
+  [self refreshStatus];
+  
   [_refreshTimer invalidate];
   _refreshTimer = [NSTimer scheduledTimerWithTimeInterval:15.0
                                                    target:self
