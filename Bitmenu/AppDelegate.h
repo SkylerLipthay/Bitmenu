@@ -9,6 +9,7 @@
 @interface AppDelegate : NSObject <NSApplicationDelegate> {
  @private
   NSStatusItem *_statusItem;
+  NSTimer *_refreshTimer;
 }
 
 @property (assign) IBOutlet NSMenu *statusMenu;

@@ -19,6 +19,9 @@ NSString * const kAPIURL = @"https://coinbase.com/api/v1";
 - (NSDecimalNumber *)buyPriceWithCurrencyCode:(NSString *)currencyCode {
   NSURL *URL = [self.class URLWithPath:[NSString stringWithFormat:@"prices/buy?currency=%@", currencyCode]];
   NSData *data = [NSData dataWithContentsOfURL:URL];
+  if (data == nil) {
+    return nil;
+  }
 
   NSError *error;
   NSDictionary *result = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];

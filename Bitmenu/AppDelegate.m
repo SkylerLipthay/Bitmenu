@@ -39,7 +39,13 @@
   [self updateShouldLaunchOnStartupMenuItem:[self.class shouldLaunchOnStartup]];
   [self updateCurrencyCodeMenuItem:[self.class currencyCode]];
   [self updateSourceMenuItem:[self.class sourceName]];
-  [self refreshStatus];
+  
+  [_refreshTimer invalidate];
+  _refreshTimer = [NSTimer scheduledTimerWithTimeInterval:15.0
+                                                   target:self
+                                                 selector:@selector(refreshStatus)
+                                                 userInfo:nil
+                                                  repeats:YES];
 }
 
 - (IBAction)handleCurrency:(id)sender {
@@ -133,6 +139,10 @@
 }
 
 - (void)setStatusWithValue:(NSDecimalNumber *)value {
+  if (value == nil) {
+    return;
+  }
+
   NSNumberFormatter *formatter = [[NSNumberFormatter alloc] init];
   [formatter setNumberStyle: NSNumberFormatterCurrencyStyle];
   [formatter setCurrencyCode:[self.class currencyCode]];
